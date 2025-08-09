@@ -4,31 +4,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitButton = contactForm.querySelector('.btn[type="submit"]');
     
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault(); // Prevent default form submission
+        e.preventDefault();
         
-        // Get form elements
         const nameInput = document.getElementById('name');
         const emailInput = document.getElementById('email');
         const messageTextarea = document.getElementById('message');
         
-        // Basic validation
         if (!nameInput.value.trim() || !emailInput.value.trim()) {
             showNoticeMessage('Please fill in all required fields (Name and Email).', 'error');
             return;
         }
         
-        // Show loading state
         const originalButtonText = submitButton.innerHTML;
         submitButton.innerHTML = 'Submitting...';
         submitButton.disabled = true;
         
-        // Prepare form data
         const formData = new FormData();
         formData.append('name', nameInput.value);
         formData.append('email', emailInput.value);
         formData.append('message', messageTextarea.value);
         
-        // Submit to Formspree
         fetch('https://formspree.io/f/mzzvyzqa', {
             method: 'POST',
             body: formData,
@@ -44,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 showNoticeMessage('Message sent successfully! I\'ll get back to you soon.', 'success');
             } else {
-                // Error handling
                 throw new Error('Form submission failed');
             }
         })
@@ -53,21 +47,17 @@ document.addEventListener('DOMContentLoaded', function() {
             showNoticeMessage('Sorry, there was an error sending your message. Please try again.', 'error');
         })
         .finally(() => {
-            // Reset button state
             submitButton.innerHTML = originalButtonText;
             submitButton.disabled = false;
         });
     });
     
-    // Function to show styled notice messages
     function showNoticeMessage(message, type = 'success') {
-        // Remove any existing notices
         const existingNotice = document.querySelector('.form-notice');
         if (existingNotice) {
             existingNotice.remove();
         }
-        
-        // Create notice message element
+
         const notice = document.createElement('div');
         notice.className = 'form-notice';
         
@@ -119,9 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.head.appendChild(style);
         }
         
-        // Insert below the form
         contactForm.appendChild(notice);
-        
         setTimeout(function() {
             if (notice.parentNode) {
                 notice.firstElementChild.style.animation = 'fadeOut 0.5s ease-in';
