@@ -1,22 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Newton's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-
-        </nav>
+      <nav class="navbar">
+        <h1 class="logo"><a href="#home">Muhindi</a></h1>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <section id="home"></section>
-    <section id="about"></section>
-    <section id="skills"></section>
-    <section id="projects"></section>
-    <section id="contact"></section>
-    <footer></footer>
-</body>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <p>Hi Everyone, I am</p>
+          <h2>Newton Muhindi</h2>
+          <p>
+            A Fullstack Developer and UI/UX Designer who loves turning ideas
+            into smooth, clickable, “wow-that’s-nice” kind of experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="./files/Newton-Muhindi-Resume.pdf" class="btn" download
+              >Download CV <i class="fa-solid fa-download"></i
+            ></a>
+            <a href="#about" class="button-outline">Explore More</a>
+          </div>
+        </div>
+        <figure class="hero-image">
+          <img src="./images/Frame 5.svg" alt="Portrait of Newton Muhindi" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container about-flex">
+        <figure class="about-image">
+          <img
+            src="./images/Code typing-amico 1.png"
+            alt="Illustation of coding"
+          />
+        </figure>
+        <div class="about-text">
+          <h3>About</h3>
+          <h2>About Me?</h2>
+          <p>
+            Beyond the code, I'm a creator. My work as a Fullstack Developer and
+            UI/UX Designer is all about bridging the gap between a great idea
+            and a stunning, functional reality. I enjoy the challenge of a new
+            project, diving deep into user needs to craft a front-end that’s a
+            joy to interact with, and then building a reliable back-end to power
+            it all. For me, the magic is in the details—making sure every click,
+            transition, and layout feels intentional and polished. I'm here to
+            ensure your vision becomes a digital experience that truly stands
+            out.
+          </p>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+    </section>
+    <section id="skills" class="skills">
+      <div class="container">
+        <h3>Skills</h3>
+        <div id="skills-content">
+          <h2>Below is my skill set</h2>
+          <div class="skills-icons">
+            <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
+            <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
+            <img
+              src="https://skillicons.dev/icons?i=javascript"
+              alt="JavaScript"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=tailwind"
+              alt="Tailwind CSS"
+            />
+            <img src="https://skillicons.dev/icons?i=python" alt="Python" />
+            <img src="https://skillicons.dev/icons?i=react" alt="React" />
+            <img src="https://skillicons.dev/icons?i=flask" alt="Flask" />
+            <img src="https://skillicons.dev/icons?i=fastapi" alt="fastapi" />
+            <img
+              src="https://skillicons.dev/icons?i=postgresql"
+              alt="Postgresql"
+            />
+            <img src="https://skillicons.dev/icons?i=figma" alt="Figma" />
+            <img
+              src="https://skillicons.dev/icons?i=wordpress"
+              alt="Wordpress"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h3>Projects</h3>
+        <h2>What I have Made?</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="./images/image 1.svg" alt="Portfolio Website Design" />
+            <h4>Portfolio Website Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://www.figma.com/design/MbliLL6hzyE1Uyyk1e9cDK/newton-Portfolio-design?node-id=1-2&t=stdto7SLEf9jXMhw-1"
+                >Figma</a
+              >
+              <a target="_blank" href="https://deliveroo-three.vercel.app/"
+                >Live Preview</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/muhindinewton/newton-portfolio"
+                >Github</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/image 1.svg" alt="Portfolio Website Design" />
+            <h4>Portfolio Website Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://www.figma.com/design/MbliLL6hzyE1Uyyk1e9cDK/newton-Portfolio-design?node-id=1-2&t=stdto7SLEf9jXMhw-1"
+                >Figma</a
+              >
+              <a target="_blank" href="https://deliveroo-three.vercel.app/"
+                >Live Preview</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/muhindinewton/newton-portfolio"
+                >Github</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/image 1.svg" alt="Portfolio Website Design" />
+            <h4>Portfolio Website Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://www.figma.com/design/MbliLL6hzyE1Uyyk1e9cDK/newton-Portfolio-design?node-id=1-2&t=stdto7SLEf9jXMhw-1"
+                >Figma</a
+              >
+              <a target="_blank" href="https://deliveroo-three.vercel.app/"
+                >Live Preview</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/muhindinewton/newton-portfolio"
+                >Github</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/image 1.svg" alt="Portfolio Website Design" />
+            <h4>Portfolio Website Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://www.figma.com/design/MbliLL6hzyE1Uyyk1e9cDK/newton-Portfolio-design?node-id=1-2&t=stdto7SLEf9jXMhw-1"
+                >Figma</a
+              >
+              <a target="_blank" href="https://deliveroo-three.vercel.app/"
+                >Live Preview</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/muhindinewton/newton-portfolio"
+                >Github</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/image 1.svg" alt="Portfolio Website Design" />
+            <h4>Portfolio Website Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://www.figma.com/design/MbliLL6hzyE1Uyyk1e9cDK/newton-Portfolio-design?node-id=1-2&t=stdto7SLEf9jXMhw-1"
+                >Figma</a
+              >
+              <a target="_blank" href="https://deliveroo-three.vercel.app/"
+                >Live Preview</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/muhindinewton/newton-portfolio"
+                >Github</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/image 1.svg" alt="Portfolio Website Design" />
+            <h4>Portfolio Website Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://www.figma.com/design/MbliLL6hzyE1Uyyk1e9cDK/newton-Portfolio-design?node-id=1-2&t=stdto7SLEf9jXMhw-1"
+                >Figma</a
+              >
+              <a target="_blank" href="https://deliveroo-three.vercel.app/"
+                >Live Preview</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/muhindinewton/newton-portfolio"
+                >Github</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+    </section>
+    <section id="contact" class="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>
+            We are committed to processing the information in order to contact
+            you and ask you about your project.
+          </p>
+          <p>
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:developermuhindi@gmail.com"
+              >muhindinewton@gmail.com</a
+            >
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Tudor, Mombasa, Kenya
+          </p>
+          <p>
+            <i class="fa-solid fa-phone-volume"></i>
+            <a href="tel:+254795482911">+254 795 482 911</a>
+          </p>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/newton-muhindi"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/muhindinewton"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <form action="#" method="post" class="contact-form">
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Name*"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email*"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="message"
+          ></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2025. Designed and Developed by Newton Muhindi.</p>
+    </footer>
+  </body>
 </html>
