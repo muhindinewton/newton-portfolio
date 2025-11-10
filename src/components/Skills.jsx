@@ -21,8 +21,8 @@ const Skills = () => {
         <h3 className="text-primary text-sm font-semibold uppercase tracking-wider text-center mb-2">
           Skills
         </h3>
-        <h2 className="text-4xl font-bold text-black text-center mb-12">My Skills</h2>
-        <div className="flex justify-center items-center gap-8 flex-wrap">
+        <h2 className="text-3xl md:text-4xl font-bold text-black text-center mb-12">My Skills</h2>
+        <div className="flex justify-center items-center gap-4 md:gap-8 flex-wrap">
           {skills.map((skill) => (
             <div key={skill.name} className="flex flex-col items-center gap-2">
               <img

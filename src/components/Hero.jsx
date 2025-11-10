@@ -10,10 +10,10 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1 text-center md:text-left">
             <p className="text-secondary text-lg mb-2">Hi there, I am</p>
-            <h2 className="text-5xl font-bold text-black mb-4 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-black mb-4 leading-tight">
               Newton Muhindi
             </h2>
-            <p className="text-secondary text-lg mb-8 leading-relaxed">
+            <p className="text-secondary text-base md:text-lg mb-8 leading-relaxed">
               A Fullstack Software Engineer and UI/UX Designer who loves turning
               ideas into smooth, clickable, "wow, that's nice" kind of
               experiences.

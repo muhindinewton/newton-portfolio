@@ -16,8 +16,8 @@ const About = () => {
             <h3 className="text-primary text-sm font-semibold uppercase tracking-wider mb-2">
               About
             </h3>
-            <h2 className="text-4xl font-bold text-black mb-6">About Me?</h2>
-            <p className="text-secondary text-lg leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">About Me?</h2>
+            <p className="text-secondary text-base md:text-lg leading-relaxed">
               Beyond the code, I'm a creator. My work as a Fullstack Software
               Engineer and UI/UX Designer is all about bridging the gap between
               a great idea and a stunning, functional reality. I enjoy the
