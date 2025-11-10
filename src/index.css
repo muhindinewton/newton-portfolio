@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4578bd;
+  --color-secondary: #263238;
+  --color-background: #ebfeff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  color: rgb(17 24 39);
+  background-color: var(--color-background);
+}
